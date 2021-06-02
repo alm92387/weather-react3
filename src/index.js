@@ -1,27 +1,22 @@
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
-import Weather from "./Weather";
-// import Form from "./Form";
-// import Header from "./Header";
+import "./App.css"
+import City from "./City"
+import Image from "./Image" 
+import Date from "./Date"
+import Weather from "./Weather"
+// import FooterOpenSource from "./FooterOpenSource"
+import Buttons from "./Buttons"
 
-import "./App.css";
+export default function App() {
+  return (
+    <div className="App">
 
-function App() {
-  return (    
-  <div className="app">
+      <Buttons />
+      <City />
+      <Image />
+      <Date />
       <Weather />
-    {/* <Header />
-    <Form /> */}
-</div>
+      {/* <FooterOpenSource  /> */}
+      
+    </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  rootElement
-);
-
-
-
