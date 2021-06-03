@@ -1,11 +1,11 @@
-import React from "react";
+// import React from "react";
 
 
-import "./App.css";
+// import "./App.css";
 
-export default function Date(props) {
-  return (
+// export default function Date(props) {
+//   return (
 
-      <Date value="Sunday May 2, 2021, 9:00" />
-  );
-}
+//       <Date value="Sunday May 2, 2021, 9:00" />
+//   );
+// }
