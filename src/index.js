@@ -7,7 +7,7 @@ import Weather from "./Weather";
 import Buttons from "./Buttons";
 export default function App() {
   return (
-    <div className="App">
+    <div className="weather-app">
       <Buttons />
       <City />
       <Weather />

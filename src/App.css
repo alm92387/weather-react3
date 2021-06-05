@@ -14,14 +14,7 @@ h3 {
   display: block;
   padding-bottom: 9px;
 }
-img {
-  display: inline;
-  max-height: 90px;
-  max-width: 90px;
-  width: 90px;
-  height: 90px;
-  padding-top: 10px;
-}
+
 li {
   list-style-type: none;
 }

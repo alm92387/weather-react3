@@ -6,7 +6,7 @@ import "./App.css";
 export default function Buttons(props) {
   return (
     
- <div className="weather-app">
+ 
 <div className="container">
 <div className="bootstrap">
 
@@ -21,7 +21,7 @@ export default function Buttons(props) {
 </svg>
 </button> 
 </div>
-</div>
+
  </div>
   );
 }
