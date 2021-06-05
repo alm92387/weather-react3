@@ -29,6 +29,10 @@ li {
   color: #046ffc;
   border: solid #046ffc;
 }
+
+.footer {
+  font-size: smaller;
+}
 .button-image #current {
   width: fit-content;
 }

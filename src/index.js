@@ -6,6 +6,7 @@ import Weather from "./Weather";
 import Form from "./Form";
 import FooterOpenSource from "./FooterOpenSource";
 import Buttons from "./Buttons";
+
 export default function App() {
   return (
     <div className="weather-app">
@@ -13,13 +14,13 @@ export default function App() {
       <Buttons />
       <City />
       <Weather />
-      <span>
-           <FooterOpenSource  />
-         </span>
-   
+    <span className="footer"> 
+    <FooterOpenSource  />
+    </span>
     </div>
   );
 }
+
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
