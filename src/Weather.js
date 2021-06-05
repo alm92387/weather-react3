@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 
-export default function Form (props){
+export default function Weather (props){
 let [city, setCity] = useState("");
 let [temperature, setTemperature] = useState("");
 let [description, setDescription] = useState(""); 
@@ -15,11 +15,7 @@ let apiKey = "74c14200946b4fbc59b8a95c822aab0e";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=
 ${city}&appid=${apiKey}&units=imperial`;
 
-function updateCity(event) {
-  event.preventDefault();
-  setCity(event.target.value);
 
-}
 function handleSubmit(event) {
   event.preventDefault();
   axios.get(apiUrl).then(setWeather);
@@ -39,16 +35,12 @@ setIcon (`http://openweathermap.org/img/wn/${
 
 
   return (
-    <div className="search">
-    <form onSubmit={handleSubmit}>
-    <input type="search" placeholder="city" onChange= {updateCity}/>
-        <input type="submit" value="Search" />
-      </form>
+    <div className="search" onSubmit={handleSubmit}>
       <ul> 
-      {/* <li> City:
+      <li> City:
          {city} 
-      </li> */}
-      <li> Temperature: {temperature} </li>
+      </li>
+      <li> Temperature: {temperature} ℉ </li>
       <li> Description: {description} </li>
       <li> Humidity: {humidity} </li>
       <li> Wind: {wind} </li>
