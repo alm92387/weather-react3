@@ -9,11 +9,13 @@ import Buttons from "./Buttons";
 
 export default function App() {
   return (
+    <div>
     <div className="weather-app">
       <Form />
       <Buttons />
       <City />
       <Weather />
+      </div>
     <span className="footer"> 
     <FooterOpenSource  />
     </span>
