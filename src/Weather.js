@@ -3,6 +3,9 @@ import axios from "axios";
 
 
 export default function Weather (props){
+function handleResponse(response){
+  
+}
 let [city, setCity] = useState("");
 let [temperature, setTemperature] = useState("");
 let [description, setDescription] = useState(""); 
@@ -11,9 +14,10 @@ let [wind, setWind] = useState("");
 let [icon, setIcon] = useState("");
 
 
-let apiKey = "74c14200946b4fbc59b8a95c822aab0e";
+const apiKey = "74c14200946b4fbc59b8a95c822aab0e";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=
 ${city}&appid=${apiKey}&units=imperial`;
+axios.get(apiUrl).then(handleResponse)
 
 
 function handleSubmit(event) {
