@@ -14,7 +14,7 @@ export default function WeatherInfo(props) {
         <li>
           <FormattedDate date={props.data.date} />
         </li>     
- <Image code={props.data.icon} size={52} /> 
+ <Image code={props.data.icon} size={props.size} /> 
                <WeatherTemperature farenheight={props.data.temperature} />
           
  <li>Humidity: {props.data.humidity}%</li>
